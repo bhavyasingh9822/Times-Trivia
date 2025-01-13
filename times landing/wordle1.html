@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="wordle1.css">
+</head>
+<body>
+    <div class="welcome-content">
+        <div role="img" aria-label="wordle" data-testid="wordle-icon" class="welcome-icon"></div>
+        <h1 data-testid="title" class="welcome-title">Words Weaver</h1>
+        <h2 class="welcome-subtitle">
+            <span class="visually-hidden">Get 6 chances to guess a 5-letter word.</span>
+            <span aria-hidden="true">Get 6 chances to guess a <span class="nowrap">5-letter</span> word.</span>
+        </h2>
+        <div class="button-container">
+            <button data-testid="how-to-play" type="button" class="button secondary">How to play</button>
+            <a class="button secondary" href="sign-in.html">Log in</a>
+            <p>
+                <a href="wordle.html">
+                <button data-testid="play" type="button" class="button">Play</button>
+            </a>
+        </p>
+        </div>
+        <div class="date-container">
+            <h3 class="date">June 17, 2024</h3>
+            <p class="wordle-meta">No. 1094</p>
+            <p class="wordle-meta">Edited by Tracy Bennett</p>
+        </div>
+    </div>
+    <script src="wordle1.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+body {
+    font-family: sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-size: cover;
+}
+
+header {
+    background-color: #000;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-section{
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position-x: left;
+    height: 400px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+
+}
+.hero-msg {
+    background-color: rgb(239, 124, 243);
+    color: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 0.85rem;
+    bottom: 60px;
+    width:100%;
+    margin-bottom: 55px;
+   
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-btn span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.hamburger-btn.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.header-right {
+    
+    display: flex;
+    align-items: center;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.sign-in-btn {
+    padding: 8px 16px;
+    background-color: #ff00ff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-right: 5px;
+}
+
+.sign-in-btn:hover {
+    opacity: 0.8;
+}
+
+.hero {
+    background-color: #000;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    margin-top: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.games {
+    background-color: #020202;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.games h2 {
+    /*background-image: url("games.png"); */
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+   
+   
+}
+.space-invaders {
+    width: 200px;
+    height: 40px;
+    margin: 0 auto 20px;
+}
+
+.space-invaders div {
+    width: 20px;
+    height: 20px;
+    background-color: #ff00ff;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+ .space-invaders div:nth-child(1) {
+    margin-left: 0;
+}
+
+.space-invaders div:nth-child(2) {
+    transform: translateX(10px);
+}
+
+.space-invaders div:nth-child(3) {
+    transform: translateX(20px);
+}
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Set default to 2 columns */
+    gap: 10px;
+    margin-top: 20px;
+   }
+   
+   @media (max-width: 1024px) {
+    .games-grid {
+    grid-template-columns: 1fr; /* Change to 1 column for smaller screens */
+    }
+   }
+
+.game-card {
+    background-color: #000;
+    border: 1px solid #ff00ff;
+    border-radius: 10px;
+    margin-left: 0%;
+    padding: 10px;
+    text-align: center;
+}
+
+.game-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.game-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #a4199980;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .header-right {
+        display: flex;
+    }
+
+    .hamburger-btn {
+        display: block;
+    }
+
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.abstract-art {
+    background-image: url('synthwave.png'); /* replace with your image URL */
+    background-size: cover; /* scale the image to cover the entire div */
+    background-position: center; /* center the image horizontally and vertically */
+    height: 100vh; /* set the height of the div to the full viewport height */
+    width: 100vw; /* set the width of the div to the full viewport width */
+    position: absolute; /* position the div absolutely to cover the entire page */
+    top: 0; /* position the div at the top of the page */
+    left: 0; /* position the div at the left of the page */
+    z-index: -1; /* set the z-index to -1 to send the div behind other elements */
+  }
+  
+  /* Add some styling to the div to give it a modern look */
+  .abstract-art {
+    filter: grayscale(0.5); /* add a grayscale filter to the image */
+    opacity: 0.8; /* set the opacity of the image to 80% */
+    transition: all 0.5s ease-in-out; /* add a transition effect to the image */
+  }
+  
+  /* Add a hover effect to the div */
+  .abstract-art:hover {
+    filter: grayscale(0); /* remove the grayscale filter on hover */
+    opacity: 1; /* set the opacity to 100% on hover */
+    transform: scale(1.1); /* scale the image up by 10% on hover */
+  }

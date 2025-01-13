@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Times of India Rewards Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="container">
+    <h1><a href="finala.jpg"></a></h1>
+    <div class="question">
+      <p>1. What was the percentage of the vote that Kangana Rawat received in the election? </p>
+      <div class="options">
+        <div class="option" data-correct="false">A.50%</div>
+        <div class="option" data-correct="true">B.68% </div>
+        <div class="option" data-correct="false">C.80% </div>
+      </div>
+    </div>
+    <div class="question">
+      <p>2.What was the promise made by Kangana Rawat in her oath-taking ceremony?    </p>
+      <div class="options">
+        <div class="option" data-correct="false">A. Equal rights for AI and robots</div>
+        <div class="option" data-correct="false">B.Reduced taxes</div>
+        <div class="option" data-correct="false">B.50% women quota in politics</div>
+        <div class="option" data-correct="true">C.All of the above </div>
+      </div>
+    </div>
+    <div class="question">
+      <p>3. What technology was used to make the oath-taking ceremony immersive for citizens back on Earth? </p>
+      <div class="options">
+        <div class="option" data-correct="false">A.Virtual reality</div>
+        <div class="option" data-correct="false">B.  Holographic technology</div>
+        <div class="option" data-correct="false">C. Artificial intelligence.</div>
+        <div class="option" data-correct="true">D. All of the above</div>
+      </div>
+    </div>
+    <div id="score">Score: 0</div>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="content">
+      <div class="scratch-card">
+        <div class="overlay"></div>
+        <div class="message">Yay! You have won THE BRAIN BLITZ Challenge with %d Score </div>
+      </div>
+      <div class="scratch-overlay" id="scratch-overlay"></div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

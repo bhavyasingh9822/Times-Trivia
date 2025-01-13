@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #080808;
+    color: #010101;
+}
+
+.welcome-content {
+   
+    max-width: 600px; 
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ff00ff;
+    box-shadow: 0 4px 8px rgba(69, 44, 44, 0.1);
+}
+
+.welcome-icon {
+    width: 100px;
+    height: 100px;
+    background-image: var(--wordle-icon);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.welcome-title {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.welcome-subtitle {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button.secondary {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.button:hover {
+    background-color: #f3eff5;
+}
+
+.date-container {
+    margin-top: 20px;
+}
+
+.date {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.wordle-meta {
+    font-size: 0.9em;
+    color: #ccc3c3;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
